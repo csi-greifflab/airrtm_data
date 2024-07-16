@@ -13,5 +13,5 @@ cd <airrtm_repo_path>
 pipenv shell
 python preprocess_data.py -w 0.005 -l 20 --min_len 6 --input_data_dir <airrtm_data_repo_path>/S1
 mkdir ./checkpoints
-python train_model.py  -w 0.005 -l 20 --input_data_dir ../airrtm_data/S1 --checkpoint_dir ./checkpoints
+python train_model.py  -w 0.005 -l 20 --input_data_dir <airrtm_data_repo_path>/S1 --checkpoint_dir ./checkpoints
 ```
